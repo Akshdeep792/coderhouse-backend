@@ -16,8 +16,8 @@ const io = require('socket.io')(server, {
 
 app.use(cookieParser())
 const corsOption = {
+    origin: ['https://codershouse-nddk.onrender.com'],
     credentials: true,
-    origin: ['https://codershouse-nddk.onrender.com/']
 }
 app.use(cors(corsOption))
 app.use('/storage', express.static('storage'))
